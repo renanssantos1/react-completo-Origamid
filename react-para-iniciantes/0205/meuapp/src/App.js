@@ -1,10 +1,10 @@
 import React from "react";
-import Aula0208 from "./components/0208";
+import Aula02082 from "./components/0208_2";
 
 const App = () => {
   return (
     <>
-      <Aula0208 />
+      <Aula02082 />
     </>
   );
 };
