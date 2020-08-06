@@ -1,12 +1,12 @@
 import React from "react";
-import UseContext01 from "./components/0305/UseContext01";
-import { GlobalStorage } from "./GlobalContext";
+import UseContext02 from "./components/0305/UseContext02";
+import { ProdutoProvider } from "./ProdutoContext";
 
 const App = () => {
   return (
-    <GlobalStorage>
-      <UseContext01 />
-    </GlobalStorage>
+    <ProdutoProvider>
+      <UseContext02 />
+    </ProdutoProvider>
   );
 };
 export default App;
