@@ -1,10 +1,10 @@
 import React from "react";
-import CustomHooks02 from "./components/0306/CustomHooks02";
+import Regras from "./components/0307/Regras";
 
 const App = () => {
   return (
     <div>
-      <CustomHooks02 />
+      <Regras />
     </div>
   );
 };
