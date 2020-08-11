@@ -1,10 +1,10 @@
 import React from "react";
-import Regras from "./components/0307/Regras";
+import Input01 from "./components/0401/Input01";
 
 const App = () => {
   return (
     <div>
-      <Regras />
+      <Input01 />
     </div>
   );
 };
