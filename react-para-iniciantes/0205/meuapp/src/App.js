@@ -1,10 +1,10 @@
 import React from "react";
-import Input01 from "./components/0401/Input01";
+import Input02 from "./components/0401/Input02";
 
 const App = () => {
   return (
     <div>
-      <Input01 />
+      <Input02 />
     </div>
   );
 };
