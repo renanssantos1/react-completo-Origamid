@@ -1,10 +1,10 @@
 import React from "react";
-import Input02 from "./components/0401/Input02";
+import CheckBox02 from "./components/0405/CheckBox02";
 
 const App = () => {
   return (
     <div>
-      <Input02 />
+      <CheckBox02 />
     </div>
   );
 };
