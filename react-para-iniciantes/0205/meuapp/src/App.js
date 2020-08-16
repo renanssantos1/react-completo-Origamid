@@ -1,10 +1,10 @@
 import React from "react";
-import CheckBox02 from "./components/0405/CheckBox02";
+import Form from "./components/Form/Form";
 
 const App = () => {
   return (
     <div>
-      <CheckBox02 />
+      <Form />
     </div>
   );
 };
