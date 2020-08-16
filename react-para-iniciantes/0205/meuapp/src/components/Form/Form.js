@@ -1,6 +1,7 @@
 import React from "react";
 import Input from "./Input";
 import Select from "./Select";
+import Radio from "./Radio";
 
 const Descricao = () => {
   return (
@@ -24,17 +25,22 @@ function Form() {
   const [nome, setNome] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [produto, setProduto] = React.useState("");
+  const [cor, setCor] = React.useState("");
 
   return (
     <div>
       <Descricao />
       <form>
+        <Radio options={["Azul", "Vermelho"]} value={cor} setValue={setCor} />
+
         <Select
           options={["Smartphone", "Tablet"]}
           value={produto}
           setValue={setProduto}
         />
+
         <Input label="Nome" id="nome" value={nome} setValue={setNome} />
+
         <Input
           label="Email"
           id="email"
