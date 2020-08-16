@@ -1,12 +1,10 @@
 import React from "react";
 import Input from "./Input";
+import Select from "./Select";
 
-function Form() {
-  const [nome, setNome] = React.useState("");
-  const [email, setEmail] = React.useState("");
-
+const Descricao = () => {
   return (
-    <div>
+    <>
       <h1 className="titulo">Componentes Input</h1>
       <p>
         Componentes puros, seus estados sao passados pelo lado de fora, pois
@@ -18,7 +16,24 @@ function Form() {
         manipuladora do estado, sao passados atravez do{" "}
         <span className="marcacao">..props</span>
       </p>
+    </>
+  );
+};
+
+function Form() {
+  const [nome, setNome] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [produto, setProduto] = React.useState("");
+
+  return (
+    <div>
+      <Descricao />
       <form>
+        <Select
+          options={["Smartphone", "Tablet"]}
+          value={produto}
+          setValue={setProduto}
+        />
         <Input label="Nome" id="nome" value={nome} setValue={setNome} />
         <Input
           label="Email"
