@@ -13,6 +13,7 @@ html {
   --color-light: #adf;
   --color-dark: #018;
   --radius: 0.2rem;
+  --error: tomato;
 }
 
 body {
@@ -77,6 +78,12 @@ textarea:focus {
   border-color: var(--color);
   background: white;
   box-shadow: 0 0 0 3px var(--color-light);
+}
+
+.error {
+  color: var(--error);
+  font-size: 13px;
+  margin-top: 0;
 }
 
 button {
