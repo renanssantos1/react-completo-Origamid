@@ -1,10 +1,10 @@
 import React from "react";
-import Form from "./components/Form/Form";
+import Validacao from "./components/0410/Validacao";
 
 const App = () => {
   return (
     <div>
-      <Form />
+      <Validacao />
     </div>
   );
 };
