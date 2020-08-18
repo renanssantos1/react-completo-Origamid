@@ -1,10 +1,28 @@
 import React from "react";
 
-function Input({ label, id, value, onChange, ...props }) {
+function Input({
+  label,
+  id,
+  onChange,
+  value,
+  type,
+  onBlur,
+  placeholder,
+  error,
+}) {
   return (
     <>
       <label htmlFor={id}>{label}</label>
-      <input type="text" id={id} name={id} onChange={onChange} {...props} />
+      <input
+        id={id}
+        name={id}
+        onChange={onChange}
+        onBlur={onBlur}
+        placeholder={placeholder}
+        type={type}
+        value={value}
+      />
+      {error && <p className="error">{error}</p>}
     </>
   );
 }
