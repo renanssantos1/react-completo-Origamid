@@ -1,10 +1,10 @@
 import React from "react";
-import CssImport from "./components/0501/CssImport";
+import CssModules from "./components/0502/CssModules";
 
 const App = () => {
   return (
     <div>
-      <CssImport />
+      <CssModules />
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.button {
+  --font-size: 1.2rem;
+}
+
+.titulo {
+  color: #43c;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: 0.1s;
+  background: #43c;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  font-size: var(--font-size);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
