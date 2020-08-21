@@ -80,8 +80,11 @@ function DesafioFormularios() {
         />
       ))}
 
-      {resultado && <p>{resultado}</p>}
-      <button onClick={handleClick}>Proxima</button>
+      {resultado ? (
+        <p>{resultado}</p>
+      ) : (
+        <button onClick={handleClick}>Proxima</button>
+      )}
     </form>
   );
 }
