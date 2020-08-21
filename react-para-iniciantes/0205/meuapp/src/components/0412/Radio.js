@@ -1,6 +1,7 @@
 import React from "react";
 
-function Radio({ pergunta, id, options, value, onChange }) {
+function Radio({ pergunta, options, id, value, active, onChange }) {
+  if (active === false) return null;
   return (
     <fieldset
       style={{
@@ -9,20 +10,18 @@ function Radio({ pergunta, id, options, value, onChange }) {
         border: "2px solid #eee",
       }}
     >
-      <legend> {pergunta}</legend>
-
+      <legend style={{ fontWeight: "bold" }}>{pergunta}</legend>
       {options.map((option) => (
         <label
           key={option}
-          htmlFor={id}
           style={{ marginBottom: "1rem", fontFamily: "monospace" }}
         >
           <input
             type="radio"
             value={option}
             id={id}
-            onChange={onChange}
             checked={value === option}
+            onChange={onChange}
           />
           {option}
         </label>
