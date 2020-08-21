@@ -1,0 +1,13 @@
+.titulo {
+  color: tomato;
+}
+
+.descricao,
+.atencao {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.atencao {
+  font-weight: bold;
+}
