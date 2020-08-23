@@ -1,10 +1,10 @@
 import React from "react";
-import Animacoes02 from "./components/0505/Animacoes02";
+import Imagens from "./components/0506/Imagens";
 
 const App = () => {
   return (
     <div>
-      <Animacoes02 />
+      <Imagens />
     </div>
   );
 };
