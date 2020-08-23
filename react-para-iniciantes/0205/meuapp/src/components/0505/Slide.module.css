@@ -1,0 +1,70 @@
+html {
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-title: Georgia, "Times New Roman", Times, serif;
+  --font-size: 1.2rem;
+  --color: #19f;
+  --color-light: #adf;
+  --color-dark: #018;
+  --radius: 0.2rem;
+  --error: tomato;
+}
+
+.button {
+  cursor: pointer;
+  font-family: var(--font);
+  border: none;
+  border-radius: var(--radius);
+  transition: 0.1s;
+  background: var(--color);
+  color: var(--color-dark);
+  padding: 0.8rem 1.6rem;
+  font-size: var(--font-size);
+}
+
+.button:hover,
+.button:focus {
+  background: var(--color);
+  box-shadow: 0 0 0 3px var(--color-light), 0 0 0 4px var(--color);
+  outline: none;
+}
+
+.button:active {
+  box-shadow: 0 0 0 3px var(--color), 0 0 0 4px var(--color);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+/* items */
+
+.container {
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.item {
+  flex-shrink: 0;
+  width: 80%;
+  margin: 0 10%;
+  padding: 10rem 0;
+  background: #eee;
+  border-radius: 4px;
+
+  text-align: center;
+
+  font-size: var(--font-size);
+}
+
+.nav {
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+  justify-content: space-between;
+}

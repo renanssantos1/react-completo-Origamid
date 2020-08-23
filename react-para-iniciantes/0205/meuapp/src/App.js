@@ -1,11 +1,10 @@
 import React from "react";
-
-import CssNoJs from "./components/0503/CssNoJs";
+import Animacoes02 from "./components/0505/Animacoes02";
 
 const App = () => {
   return (
     <div>
-      <CssNoJs />
+      <Animacoes02 />
     </div>
   );
 };
