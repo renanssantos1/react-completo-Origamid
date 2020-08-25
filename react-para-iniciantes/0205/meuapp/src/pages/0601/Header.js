@@ -1,8 +1,14 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Header() {
+  const location = useLocation();
+
+  React.useEffect(() => {
+    console.log("Mudou de rota");
+  }, [location]);
+
   return (
     <header>
       <nav>
