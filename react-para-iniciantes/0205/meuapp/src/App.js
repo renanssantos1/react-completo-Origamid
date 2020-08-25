@@ -1,10 +1,10 @@
 import React from "react";
-import Imagens from "./components/0506/Imagens";
+import Router from "./pages/0601/Router";
 
 const App = () => {
   return (
     <div>
-      <Imagens />
+      <Router />
     </div>
   );
 };
