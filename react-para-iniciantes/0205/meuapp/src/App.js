@@ -1,11 +1,7 @@
 import React from "react";
-import Router from "./pages/0601/Router";
+import Router from "./pages/0606/Router";
 
 const App = () => {
-  return (
-    <div>
-      <Router />
-    </div>
-  );
+  return <Router />;
 };
 export default App;
