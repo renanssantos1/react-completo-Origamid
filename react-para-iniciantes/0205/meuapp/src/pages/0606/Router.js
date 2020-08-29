@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Produtos from "./Produtos";
+import Produto from "./Produto";
 import Contato from "./Contato";
 
 import Header from "./Header";
@@ -16,6 +17,8 @@ function Router() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Produtos />} />
+            <Route path="produto/:id" element={<Produto />} />
+
             <Route path="contato" element={<Contato />} />
           </Routes>
         </div>
