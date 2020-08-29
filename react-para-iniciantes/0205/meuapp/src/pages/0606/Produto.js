@@ -29,16 +29,17 @@ function Produto() {
     fetchProduto("https://ranekapi.origamid.dev/json/api/produto/" + id);
   }, [id]);
 
-  if (loading) return <div>carregando...</div>;
+  if (loading) return <div className="loading"></div>;
   if (erro) return <p>{erro}</p>;
   if (produto === null) return null;
   return (
     <section className={styles.produto + " animeLeft"}>
       <Head title={` ${produto.nome}`} content={` ${produto.descricao}`} />
-
-      {produto.fotos.map((foto) => (
-        <img key={foto.src} src={foto.src} alt={foto.titulo} />
-      ))}
+      <div>
+        {produto.fotos.map((foto) => (
+          <img key={foto.src} src={foto.src} alt={foto.titulo} />
+        ))}
+      </div>
       <div>
         <h1>{produto.nome}</h1>
         <span className={styles.preco}>R$ {produto.preco}</span>

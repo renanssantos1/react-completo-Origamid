@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <h1>Footer</h1>
+      <h3>React completo - Alguns direitos reservados</h3>
     </footer>
   );
 }
