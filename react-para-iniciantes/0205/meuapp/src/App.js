@@ -1,10 +1,10 @@
 import React from "react";
-import LazyESuspence from "./components/0702/LazyESuspence";
+import Memo0703 from "./components/0703/Memo0703";
 
 const App = () => {
   return (
     <div>
-      <LazyESuspence />
+      <Memo0703 />
     </div>
   );
 };
