@@ -1,10 +1,10 @@
 import React from "react";
-import PropTypes0701 from "./components/0701/PropTypes0701";
+import LazyESuspence from "./components/0702/LazyESuspence";
 
 const App = () => {
   return (
     <div>
-      <PropTypes0701 />
+      <LazyESuspence />
     </div>
   );
 };

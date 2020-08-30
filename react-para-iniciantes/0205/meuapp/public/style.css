@@ -128,3 +128,9 @@ hr {
 .marcacao {
   color: tomato;
 }
+
+.main-container {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 10px;
+}
