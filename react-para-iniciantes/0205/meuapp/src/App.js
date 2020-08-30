@@ -1,7 +1,11 @@
 import React from "react";
-import Router from "./pages/0606/Router";
+import PropTypes0701 from "./components/0701/PropTypes0701";
 
 const App = () => {
-  return <Router />;
+  return (
+    <div>
+      <PropTypes0701 />
+    </div>
+  );
 };
 export default App;
