@@ -1,10 +1,10 @@
 import React from "react";
-import UseReducer0704 from "./components/0704/useReducer0704";
+import IntroducaoClasses from "./components/0705/IntroducaoClasses";
 
 const App = () => {
   return (
     <div className="main-container">
-      <UseReducer0704 />
+      <IntroducaoClasses />
     </div>
   );
 };
