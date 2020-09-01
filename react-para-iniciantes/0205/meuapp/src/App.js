@@ -1,10 +1,10 @@
 import React from "react";
-import Memo0703 from "./components/0703/Memo0703";
+import UseReducer0704 from "./components/0704/useReducer0704";
 
 const App = () => {
   return (
-    <div>
-      <Memo0703 />
+    <div className="main-container">
+      <UseReducer0704 />
     </div>
   );
 };
